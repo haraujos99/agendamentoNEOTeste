@@ -1,13 +1,5 @@
-$(document).ready(function(){
-  $('#datepicker').datepicker({
-    language: 'pt-BR'
-  }); 
-});
-
 $(function () {  
-  $('#timepicker').datetimepicker({  
-      format: 'LT'  
-  });  
+  $('#datetimepicker').datetimepicker({});  
 }); 
   
 
