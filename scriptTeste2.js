@@ -10,15 +10,6 @@ $(function () {
   });  
 }); 
   
-const handleSubmit = (e)=>{    
-  console.log('Entrou');
-  if(document.getElementById(`datepicker`).value == "" || document.getElementById(`selectMotivoAgendamento`).value == "" || document.getElementById(`selectRetorno`).value ==""){
-    e.preventDefault()
-    return window.alert("Preencha todas as informações!");  
-  }
-
-  window.alert("Agendamento realizado!");  
-}
 
 function mask(o, f) {
     setTimeout(function() {
