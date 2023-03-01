@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <!-- Bootstrap e Datetimepicker CSS -->
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">  
-    
-    <!-- jQuery -->
-    <script defer type='text/javascript' src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
-    <script defer type='text/javascript' src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>  
-    <script defer type='text/javascript' src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>  
-    
-
-    <!-- DateTimePicker JS -->
-    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.0/js/bootstrap-datetimepicker.min.js"></script> 
-
-    <script defer type='text/javascript' src="https://cdn.jsdelivr.net/gh/haraujos99/agendamentoNEOTeste/scriptTeste3.js"></script>
+    <script defer type='text/javascript' src="https://cdn.jsdelivr.net/gh/haraujos99/agendamentoNEOTeste/TesteMascaraPhone.js"></script>
 </head>
 
 <body style="
@@ -59,19 +45,207 @@ font-family: sans-serif;">
                 <label for="inputData" style="
                 display: flex;
                 margin: 5px 0px;
+                align-items: center;
                 align-self: center;
                 ">
                     Data:
-                    <div  style="position: relative;">
-                        <input type = 'text' WaitForSubmit="true" class="form-control" id='datetimepicker' name="datetimepicker" placeholder="dd/MM/yyy HH:MM" style="
-                        width: 160px;
+                    <div>
+                        <select id='data_dia' name="data_dia" style="
+                        width: 45px;
                         height: 25px;
                         border-radius: 5px;
                         border: 1px solid rgb(169, 168, 168);
                         " />  
+                            <option selected value="">dia</option>
+                            <option  value="01">01</option>
+                            <option  value="02">02</option>
+                            <option  value="03">03</option>
+                            <option  value="04">04</option>
+                            <option  value="05">05</option>
+                            <option  value="06">06</option>
+                            <option  value="07">07</option>
+                            <option  value="08">08</option>
+                            <option  value="09">09</option>
+                            <option  value="10">10</option>
+                            <option  value="11">11</option>
+                            <option  value="12">12</option>
+                            <option  value="13">13</option>
+                            <option  value="14">14</option>
+                            <option  value="15">15</option>
+                            <option  value="16">16</option>
+                            <option  value="17">17</option>
+                            <option  value="18">18</option>
+                            <option  value="19">19</option>
+                            <option  value="20">20</option>
+                            <option  value="21">21</option>
+                            <option  value="22">22</option>
+                            <option  value="23">23</option>
+                            <option  value="24">24</option>
+                            <option  value="25">25</option>
+                            <option  value="26">26</option>
+                            <option  value="27">27</option>
+                            <option  value="28">28</option>
+                            <option  value="29">29</option>
+                            <option  value="30">30</option>
+                            <option  value="31">31</option>
+                        </select>
 
+                        <select id='data_mes' name="data_mes" style="
+                        width: 85px;
+                        height: 25px;
+                        border-radius: 5px;
+                        border: 1px solid rgb(169, 168, 168);
+                        " />  
+                            <option selected value="">mês</option>
+                            <option  value="01">Janeiro</option>
+                            <option  value="02">Fevereiro</option>
+                            <option  value="03">Março</option>
+                            <option  value="04">Abril</option>
+                            <option  value="05">Maio</option>
+                            <option  value="06">Junho</option>
+                            <option  value="07">Julho</option>
+                            <option  value="08">Agosto</option>
+                            <option  value="09">Setembro</option>
+                            <option  value="10">Outubro</option>
+                            <option  value="11">Novembro</option>
+                            <option  value="12">Dezembro</option>
+                        </select>
+
+                        <select id='data_ano' name="data_ano" style="
+                        width: 65px;
+                        height: 25px;
+                        border-radius: 5px;
+                        border: 1px solid rgb(169, 168, 168);
+                        " />  
+                            <option selected value="">ano</option>
+                            <option  value="2023">2023</option>
+                            <option  value="2024">2024</option>
+                            <option  value="2025">2025</option>
+                            <option  value="2026">2026</option>
+                            <option  value="2027">2027</option>
+                            <option  value="2028">2028</option>
+                            <option  value="2029">2029</option>
+                            <option  value="2030">2030</option>
+                            <option  value="2031">2031</option>
+                            <option  value="2032">2032</option>
+                            <option  value="2033">2033</option>
+                        </select>
                     </div>
                     
+                </label>
+
+                <label for="inputHora" style="
+                display: flex;
+                align-items: center;
+                margin: 5px 0px;
+                align-self: center;
+                ">
+                Hora: 
+                <select id='data_hora' name="data_hora" style="
+                width: 55px;
+                height: 25px;
+                border-radius: 5px;
+                border: 1px solid rgb(169, 168, 168);
+                margin-right: 5px;
+                margin-left: 5px;
+                " />  
+                    <option selected value="">hora</option>
+                    <option  value="00">00</option>
+                    <option  value="01">01</option>
+                    <option  value="02">02</option>
+                    <option  value="03">03</option>
+                    <option  value="04">04</option>
+                    <option  value="05">05</option>
+                    <option  value="06">06</option>
+                    <option  value="07">07</option>
+                    <option  value="08">08</option>
+                    <option  value="09">09</option>
+                    <option  value="10">10</option>
+                    <option  value="11">11</option>
+                    <option  value="12">12</option>
+                    <option  value="13">13</option>
+                    <option  value="14">14</option>
+                    <option  value="15">15</option>
+                    <option  value="16">16</option>
+                    <option  value="17">17</option>
+                    <option  value="18">18</option>
+                    <option  value="19">19</option>
+                    <option  value="20">20</option>
+                    <option  value="21">21</option>
+                    <option  value="22">22</option>
+                    <option  value="23">23</option>
+                    
+                </select>
+                :
+                <select id='data_minuto' name="data_minuto" style="
+                width: 45px;
+                height: 25px;
+                border-radius: 5px;
+                border: 1px solid rgb(169, 168, 168);
+                margin-right: 5px;
+                margin-left: 5px;
+                " />  
+                    <option selected value="">min</option>
+                    <option  value="00">00</option>
+                    <option  value="01">01</option>
+                    <option  value="02">02</option>
+                    <option  value="03">03</option>
+                    <option  value="04">04</option>
+                    <option  value="05">05</option>
+                    <option  value="06">06</option>
+                    <option  value="07">07</option>
+                    <option  value="08">08</option>
+                    <option  value="09">09</option>
+                    <option  value="10">10</option>
+                    <option  value="11">11</option>
+                    <option  value="12">12</option>
+                    <option  value="13">13</option>
+                    <option  value="14">14</option>
+                    <option  value="15">15</option>
+                    <option  value="16">16</option>
+                    <option  value="17">17</option>
+                    <option  value="18">18</option>
+                    <option  value="19">19</option>
+                    <option  value="20">20</option>
+                    <option  value="21">21</option>
+                    <option  value="22">22</option>
+                    <option  value="23">23</option>
+                    <option  value="24">24</option>
+                    <option  value="25">25</option>
+                    <option  value="26">26</option>
+                    <option  value="27">27</option>
+                    <option  value="28">28</option>
+                    <option  value="29">29</option>
+                    <option  value="30">30</option>
+                    <option  value="31">31</option>
+                    <option  value="32">32</option>
+                    <option  value="33">33</option>
+                    <option  value="34">34</option>
+                    <option  value="35">35</option>
+                    <option  value="36">36</option>
+                    <option  value="37">37</option>
+                    <option  value="38">38</option>
+                    <option  value="39">39</option>
+                    <option  value="40">40</option>
+                    <option  value="41">42</option>
+                    <option  value="43">43</option>
+                    <option  value="44">44</option>
+                    <option  value="45">45</option>
+                    <option  value="46">46</option>
+                    <option  value="47">47</option>
+                    <option  value="48">48</option>
+                    <option  value="49">49</option>
+                    <option  value="50">50</option>
+                    <option  value="51">51</option>
+                    <option  value="52">52</option>
+                    <option  value="53">53</option>
+                    <option  value="54">54</option>
+                    <option  value="55">55</option>
+                    <option  value="56">56</option>
+                    <option  value="57">57</option>
+                    <option  value="58">58</option>
+                    <option  value="59">59</option>
+                </select>
                 </label>
                 <label for="selectMotivoAgendamento" style="
                 display: flex;
@@ -79,7 +253,7 @@ font-family: sans-serif;">
                 align-self: center;
                 ">
                     Motivo: 
-                    <select name="selectMotivoAgendamento" WaitForSubmit="true" id="selectMotivoAgendamento" name="selectMotivoAgendamento" style="
+                    <select name="selectMotivoAgendamento" id="selectMotivoAgendamento" name="selectMotivoAgendamento" style="
                     border-radius: 5px;
                     border: 1px solid rgb(169, 168, 168);
                     width: 160px;
@@ -97,7 +271,7 @@ font-family: sans-serif;">
                 align-self: center;
                 ">
                     Retorno: 
-                    <select name="selectRetorno" WaitForSubmit="true" id="selectRetorno" name="selectRetorno" style="
+                    <select name="selectRetorno" id="selectRetorno" name="selectRetorno" style="
                     border-radius: 5px;
                     border: 1px solid rgb(169, 168, 168);
                     width: 160px;
@@ -117,7 +291,7 @@ font-family: sans-serif;">
                     style="
                     font-size: 12px;
                     ">
-                        <input type="radio" id="checkMesmoTelefone" WaitForSubmit="true" name="retornoTelefone" value="Mesmo telefone">
+                        <input type="radio" id="checkMesmoTelefone" name="retornoTelefone" value="Mesmo telefone">
                         Retornar para mesmo telefone
                     </label>
                     
@@ -125,9 +299,9 @@ font-family: sans-serif;">
                     style="
                     font-size: 12px;
                     ">
-                        <input type="radio" id="checkOutroTelefone" WaitForSubmit="true" name="retornoTelefone" value="Outro telefone">
+                        <input type="radio" id="checkOutroTelefone"  name="retornoTelefone" value="Outro telefone">
                         Retornar para
-                        <input type="text" id="inputOutroTelefone" WaitForSubmit="true" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);"">
+                        <input type="text" id="inputOutroTelefone"  onkeypress="mask(this, mphone);" onblur="mask(this, mphone);"">
                     </label>
                 </div>
 
