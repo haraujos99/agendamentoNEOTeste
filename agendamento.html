@@ -295,14 +295,16 @@ font-family: sans-serif;">
                         Retornar para mesmo telefone
                     </label>
                     
-                    <label for="inputOutroTelefone"
-                    style="
-                    font-size: 12px;
-                    ">
+                    <div class="outrotelefone">
+                        <label for="inputOutroTelefone"
+                        style="
+                        font-size: 12px;
+                        ">
                         <input type="radio" id="checkOutroTelefone"  name="retornoTelefone" value="Outro telefone">
                         Retornar para
-                        <input name="telefone" id="telefone" type="number">
-                    </label>
+                        </label>
+                        <input style="width: 50%;" name="numeroTelefone" id="numeroTelefone" type="number">
+                    </div>
                 </div>
 
                 <button type="submit" id="btnAgendar" style="
